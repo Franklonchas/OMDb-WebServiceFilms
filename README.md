@@ -14,4 +14,4 @@ The donations will be for the creator of the API, not for the creator of this ap
 
 * **Francisco Javier Sanchez de la Torre** [Github](https://github.com/Franklonchas)
 
-You can use the application by pressing [HERE](https://franklonchas.github.io/Pong/).
+You can use the application by pressing [HERE](https://franklonchas.github.io/OMDb-WebServiceFilms/).
