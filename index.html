@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- This website has been created by Francisco Javier Sanchez de la Torre, before copying and pasting read the code and
+understand it ;)
+My Github https://github.com/Franklonchas.
+Enjoy it!
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +27,8 @@
 <body style="background-color:#d9d9d9">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-    <a class="navbar-brand" href="index.html"> <img src="img/navicon.png" width="30" height="30" alt=""> OMDb Film Finder</a>
+    <a class="navbar-brand" href="index.html"> <img src="img/navicon.png" width="30" height="30" alt=""> OMDb Film
+        Finder</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,15 +42,16 @@
         <button class="btn btn btn-info my-2 my-sm-0" id="valor">Search</button>
     </div>
 </nav>
-<br>
 
+<br>
 <div class="container" id="tittle"></div>
 <br><br>
+
 <div class="container" id="content">
     <img src="img/loading.gif" style="display: none; margin-left: auto; margin-right: auto;" id="loading">
-
     <div class="container" id="moreDetails">
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content text-white bg-dark border-white">
                     <div class="modal-header">
@@ -54,7 +61,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="" id="currentFilmImage">
+                        <img style="align-items: center;" src="" id="currentFilmImage">
                         <p id="currentFilmTitle"></p>
                         <p id="currentFilmDirector"></p>
                         <p id="currentFilmActors"></p>
@@ -62,8 +69,10 @@
                         <p id="currentFilmProduction"></p>
                         <p id="currentFilmPEGI"></p>
                         <p id="currentFilmReleased"></p>
-
-
+                        <p id="currentFilmRuntime"></p>
+                        <p id="currentFilmAwards"></p>
+                        <p id="currentFilmimdbRating"></p>
+                        <p id="currentFilmWriter"></p>
                     </div>
                     <div class="modal-footer">
                         <p style="text-align: left">OMBd Film Finder</p>
@@ -74,7 +83,6 @@
         </div>
 
     </div>
-
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -136,6 +144,7 @@
 </body>
 
 <br><br><br>
+
 <footer class="footer">
     <div class="container bottom_border">
         <div class="row">
@@ -145,7 +154,6 @@
                     can search all the movies you want.</p>
                 <p><i class="fa fa fa-envelope"></i> fjsancheztrabajos@gmail.com </p>
             </div>
-
             <div class=" col-sm-4 col-md  col-12 col">
                 <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
                 <ul class="footer_ul_amrc">
@@ -169,8 +177,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="container">
         <ul class="foote_bottom_ul_amrc">
             <li><a href="https://github.com/Franklonchas">Github Developer</a></li>
@@ -186,8 +192,6 @@
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </div>
-
 </footer>
-
 <script src="script.js"></script>
 </html>

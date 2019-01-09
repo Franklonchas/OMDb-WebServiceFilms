@@ -69,7 +69,6 @@ function addFilm(listFilms) {
     });
 }
 
-
 function moreDetails(event) {
     currentFilmId = event.target.parentElement.children[2].innerHTML;
     document.getElementById("loading").style.display = "block";
@@ -80,20 +79,30 @@ function moreDetails(event) {
             console.log(result);
             detailFilm = result;
             document.getElementById("currentFilmImage").src = detailFilm.Poster;
-            document.getElementById("currentFilmTitle").innerHTML = "Title: " + detailFilm.Title;
+            document.getElementById("currentFilmTitle").innerHTML = detailFilm.Title;
             document.getElementById("currentFilmDirector").innerHTML = "Director: " + detailFilm.Director;
             document.getElementById("currentFilmActors").innerHTML = "Actors: " + detailFilm.Actors;
             document.getElementById("currentFilmPlot").innerHTML = "Synapses: " + detailFilm.Plot;
             document.getElementById("currentFilmProduction").innerHTML = "Production company: " + detailFilm.Production;
+            document.getElementById("currentFilmPEGI").innerHTML = "Age rating: " + detailFilm.Rated;
+            document.getElementById("currentFilmReleased").innerHTML = "Year released: " + detailFilm.Released;
+            document.getElementById("currentFilmRuntime").innerHTML = "Runtime Film: " + detailFilm.Runtime;
+            document.getElementById("currentFilmAwards").innerHTML = "Awards:  " + detailFilm.Awards;
+            document.getElementById("currentFilmimdbRating").innerHTML = "imdbRating: " + detailFilm.imdbRating;
+            document.getElementById("currentFilmWriter").innerHTML = "Writer Film: " + detailFilm.Writer;
+
+            //styles
+            document.getElementById("currentFilmTitle").setAttribute("align", "center");
+            document.getElementById("currentFilmTitle").style.fontWeight = "900";
+            document.getElementById("currentFilmTitle").style.textTransform = "uppercase";
+
 
         },
         error: function () {
             console.log("Something goes wrong.");
         }
     });
-
 }
-
 
 v.ready(function () {
     var random = Math.floor(Math.random() * 4) + 1;
@@ -110,6 +119,3 @@ v.ready(function () {
         selector.innerHTML = "<img src='tittle_banner/tittle4.jpg'>";
     }
 });
-
-
-// '    <a class="btn btn-info" onclick="moreDetails(event)">More Details</a>' +
