@@ -19,7 +19,7 @@ $("#valor").click(function findFilm() {
         success: function (result) {
             document.getElementById("loading").style.display = "none";
             if (result.Response === 'True') {
-                console.log(result, "The server has responded to the request");
+                //console.log(result, "The server has responded to the request");
                 listFilms = result;
                 if (flag === 0) {
                     document.getElementById("carouselExampleIndicators").remove();
@@ -62,6 +62,9 @@ function addFilm(listFilms) {
                         document.getElementById("loading").style.display = "none";
                         addFilm(parameter);
                         petition = false;
+                    },
+                    error: function () {
+                        console.log("Something goes wrong.");
                     }
                 });
             }
@@ -76,7 +79,7 @@ function moreDetails(event) {
         url: "http://www.omdbapi.com/?i=" + currentFilmId + "&plot=full&apikey=e5e10b8a",
         success: function (result) {
             document.getElementById("loading").style.display = "none";
-            console.log(result);
+            //console.log(result);
             detailFilm = result;
             document.getElementById("currentFilmImage").src = detailFilm.Poster;
             document.getElementById("currentFilmTitle").innerHTML = detailFilm.Title;
