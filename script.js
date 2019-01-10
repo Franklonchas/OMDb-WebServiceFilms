@@ -40,7 +40,7 @@ function errorImage(error) {
 
 function addFilm(listFilms) {
     for (let i = 0; i < listFilms.Search.length; i++) {
-        $("#content").append('<div class="card text-white bg-dark border-white col-lg-3 col-md-4 col-sm-6 col-xs-12 col-12" style="height: 700px; display: inline-flex;">\n' + '<br>' +
+        $("#content").append('<div class="card text-white bg-dark border-white col-lg-3 col-md-4 col-sm-6 col-xs-12 col-12" style="height: 700px; display: inline-flex; text-align: center;">\n' + '<br>' +
             '  <img class="card-img-top" style="height: 400px; width: 100%;" src="' + listFilms.Search[i].Poster + '" onerror="errorImage(this)">\n' +
             '  <div class="card-body">\n' +
             '    <h5 class="card-title">' + listFilms.Search[i].Title + '</h5>\n' +
